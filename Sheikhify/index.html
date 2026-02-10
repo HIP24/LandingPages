@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheikhify - Your AI Islamic Companion</title>
+    <meta name="description"
+        content="Connect with Sheikhify, your personal AI Sheikh for Islamic guidance. Chat, call, or video call for authentic answers from Quran and Hadith.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sheikhify">
+    <meta property="og:description"
+        content="Your personal AI Sheikh for Islamic guidance and knowledge. Ask questions, chat, or call anytime.">
+    <meta property="og:image" content="img/logo_transparent_only.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo_transparent_only.png">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <a href="index.html" class="logo-brand mobile-hidden">
+                <img src="img/logo_transparent_only.png" alt="Sheikhify Logo">
+                <span>Sheikhify</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </div>
+        </nav>
+
+        <!-- New Mobile Navigation Drawer -->
+        <div class="mobile-nav-drawer" id="mobileNavDrawer">
+            <div class="mobile-nav-header">
+                <div class="mobile-nav-brand">
+                    <img src="img/logo_transparent_only.png" alt="Sheikhify" class="mobile-nav-logo">
+                    <span class="mobile-nav-title">Sheikhify</span>
+                </div>
+                <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <nav class="mobile-nav-menu">
+                <div class="mobile-nav-section">
+                    <h4 class="mobile-nav-section-title">Navigation</h4>
+                    <div class="mobile-nav-links">
+                        <a href="#features" class="mobile-nav-item">
+                            <span class="material-symbols-outlined">star</span>
+                            <span>Features</span>
+                        </a>
+                        <a href="#contact" class="mobile-nav-item">
+                            <span class="material-symbols-outlined">email</span>
+                            <span>Contact</span>
+                        </a>
+                        <a href="privacy.html" class="mobile-nav-item">
+                            <span class="material-symbols-outlined">shield</span>
+                            <span>Privacy</span>
+                        </a>
+                        <a href="terms.html" class="mobile-nav-item">
+                            <span class="material-symbols-outlined">description</span>
+                            <span>Terms</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-section">
+                    <h4 class="mobile-nav-section-title">Follow Us</h4>
+                    <div class="mobile-nav-social">
+                        <a href="#" class="mobile-nav-social-item">
+                            <i class='bx bxl-twitter'></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="mobile-nav-social-item">
+                            <i class='bx bxl-instagram'></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">Your Personal AI Sheikh</div>
+                <h1>Your Personal Sheikh</h1>
+                <p>Connect with Sheikhify, your intelligent Islamic companion. Ask questions about the Quran, Hadith,
+                    or daily Islamic practices through chat, voice calls, or video calls — anytime, anywhere.</p>
+                <div class="cta-group">
+                    <a href="#" class="btn-download btn-secondary">
+                        <img src="img/android.png" alt="Android Icon">
+                        Get for Android
+                    </a>
+                    <a href="#" class="btn-download btn-secondary">
+                        <img src="img/ios.png" alt="iOS Icon">
+                        Get for iOS
+                    </a>
+                </div>
+
+                <!-- Social Media Links -->
+                <h3 class="follow-us">Follow us on</h3>
+                <div class="social-links-hero">
+                    <a href="#" class="social-link social-x" aria-label="Follow us on Twitter">
+                        <i class='bx bxl-twitter social-icon'></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="social-link social-instagram" aria-label="Follow us on Instagram">
+                        <i class='bx bxl-instagram social-icon'></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link social-tiktok" aria-label="Follow us on TikTok">
+                        <i class='bx bxl-tiktok social-icon'></i>
+                        <span>TikTok</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/logo_transparent_only.png" alt="Sheikhify App Icon" class="main-logo">
+            </div>
+        </section>
+
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="section-header">
+                <h2>Connect With Sheikh</h2>
+                <p>Multiple ways to seek knowledge and guidance from your AI Sheikh.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><span class="material-symbols-outlined">chat</span></div>
+                    <h3>Islamic Chat</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Ask questions about Quran and Hadith</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Get authentic Islamic guidance instantly</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Save chat history for future reference</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><span class="material-symbols-outlined">call</span></div>
+                    <h3>Voice Calls</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Speak directly with Sheikh</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Natural voice conversations</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Hands-free guidance on the go</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><span class="material-symbols-outlined">videocam</span></div>
+                    <h3>Video Calls</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Face-to-face virtual meetings</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Personal connection with Sheikh</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Immersive Islamic learning experience</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <h2>Start Your Journey Today</h2>
+            <p>Connect with Sheikhify and get authentic Islamic guidance whenever you need it.</p>
+            <div class="cta-group">
+                <a href="#" class="btn-download btn-primary">
+                    <img src="img/android.png" alt="Android Icon">
+                    Play Store
+                </a>
+                <a href="#" class="btn-download btn-primary">
+                    <img src="img/ios.png" alt="iOS Icon">
+                    App Store
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p>Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon-box"><span class="material-symbols-outlined">email</span></div>
+                    <h3>Email Support</h3>
+                    <p>Send us an email and we'll get back to you shortly.</p>
+                    <a href="mailto:halilpamuk24@gmail.com" class="contact-link">halilpamuk24@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="icon-box"><span class="material-symbols-outlined">feedback</span></div>
+                    <h3>Feedback & Suggestions</h3>
+                    <p>Help us improve Sheikhify with your ideas.</p>
+                    <a href="mailto:halilpamuk24@gmail.com" class="contact-link">halilpamuk24@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2026 Sheikhify. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Scroll Reveal Logic -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('nav.top-nav');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            lastScrollY = currentScrollY;
+        });
+
+        // Mobile Navigation Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+        const mobileNavClose = document.getElementById('mobileNavClose');
+        const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+
+        // Initialize mobile nav state - ensure it's closed on page load
+        function initializeMobileNav() {
+            mobileNavDrawer.classList.remove('open');
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            console.log('Mobile navigation initialized - closed');
+        }
+
+        // Run initialization when DOM is ready
+        document.addEventListener('DOMContentLoaded', initializeMobileNav);
+
+        // Also run immediately in case DOM is already loaded
+        initializeMobileNav();
+
+        function openMobileNav() {
+            console.log('Opening mobile navigation');
+            mobileNavDrawer.classList.add('open');
+            mobileNavOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileNav() {
+            console.log('Closing mobile navigation');
+            mobileNavDrawer.classList.remove('open');
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuToggle.addEventListener('click', openMobileNav);
+        mobileNavClose.addEventListener('click', closeMobileNav);
+        mobileNavOverlay.addEventListener('click', closeMobileNav);
+
+        // Close mobile nav when clicking on nav links
+        document.querySelectorAll('.mobile-nav-item').forEach(link => {
+            link.addEventListener('click', () => {
+                setTimeout(closeMobileNav, 300); // Small delay to allow navigation
+            });
+        });
+
+        // Close mobile nav on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileNavDrawer.classList.contains('open')) {
+                closeMobileNav();
+            }
+        });
+    </script>
+</body>
+
+</html>

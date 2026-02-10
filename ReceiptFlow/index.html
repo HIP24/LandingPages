@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReceiptFlow</title>
+    <meta name="description"
+        content="Effortlessly scan receipts, organize expenses, and manage your finances with ReceiptFlow. The smart receipt management solution.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ReceiptFlow">
+    <meta property="og:description" content="Scan receipts, track expenses, and simplify your financial management.">
+    <meta property="og:image" content="img/logo_transparent_only.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo_transparent_only.png">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <a href="index.html" class="logo-brand mobile-hidden">
+                <img src="img/logo_transparent_only.png" alt="ReceiptFlow Logo">
+                <span>ReceiptFlow</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </div>
+        </nav>
+
+        <!-- New Mobile Navigation Drawer -->
+        <div class="mobile-nav-drawer" id="mobileNavDrawer">
+            <div class="mobile-nav-header">
+                <div class="mobile-nav-brand">
+                    <img src="img/logo_transparent_only.png" alt="ReceiptFlow" class="mobile-nav-logo">
+                    <span class="mobile-nav-title">ReceiptFlow</span>
+                </div>
+                <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <nav class="mobile-nav-menu">
+                <div class="mobile-nav-section">
+                    <h4 class="mobile-nav-section-title">Navigation</h4>
+                    <div class="mobile-nav-links">
+                        <a href="#features" class="mobile-nav-item">
+                            <span class="material-symbols-outlined">star</span>
+                            <span>Features</span>
+                        </a>
+                        <a href="#contact" class="mobile-nav-item">
+                            <span class="material-symbols-outlined">email</span>
+                            <span>Contact</span>
+                        </a>
+                        <a href="privacy.html" class="mobile-nav-item">
+                            <span class="material-symbols-outlined">shield</span>
+                            <span>Privacy</span>
+                        </a>
+                        <a href="terms.html" class="mobile-nav-item">
+                            <span class="material-symbols-outlined">description</span>
+                            <span>Terms</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-section">
+                    <h4 class="mobile-nav-section-title">Follow Us</h4>
+                    <div class="mobile-nav-social">
+                        <a href="#" class="mobile-nav-social-item">
+                            <i class='bx bxl-twitter'></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="mobile-nav-social-item">
+                            <i class='bx bxl-instagram'></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">Smart Receipt Management</div>
+                <h1>Scan, Store, Simplify</h1>
+                <p>ReceiptFlow transforms your phone into a powerful receipt scanner. Organize expenses, track spending,
+                    and declutter your life with our intelligent management system.</p>
+                <div class="cta-group">
+                    <a href="#" class="btn-download btn-secondary">
+                        <img src="img/android.png" alt="Android Icon">
+                        Get for Android
+                    </a>
+                    <a href="#" class="btn-download btn-secondary">
+                        <img src="img/ios.png" alt="iOS Icon">
+                        Get for iOS
+                    </a>
+                </div>
+
+                <!-- Social Media Links -->
+                <h3 class="follow-us">Follow us on</h3>
+                <div class="social-links-hero">
+                    <a href="#" class="social-link social-x" aria-label="Follow us on Twitter">
+                        <i class='bx bxl-twitter social-icon'></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="social-link social-instagram" aria-label="Follow us on Instagram">
+                        <i class='bx bxl-instagram social-icon'></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link social-tiktok" aria-label="Follow us on TikTok">
+                        <i class='bx bxl-tiktok social-icon'></i>
+                        <span>TikTok</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/logo_transparent_only.png" alt="ReceiptFlow App Icon" class="main-logo">
+            </div>
+        </section>
+
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="section-header">
+                <h2>Why ReceiptFlow?</h2>
+                <p>The ultimate tool for seamless expense tracking and receipt organization.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><span class="material-symbols-outlined">document_scanner</span></div>
+                    <h3>Smart Scanning</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="material-symbols-outlined">center_focus_strong</span>
+                            <span>High-precision OCR technology</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">auto_fix</span>
+                            <span>Automatic data extraction</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">crop</span>
+                            <span>Smart cropping and enhancement</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><span class="material-symbols-outlined">folder_open</span></div>
+                    <h3>Organization</h3>
+                    <div class="analytics-preview">
+                        <ul class="feature-list">
+                            <li><span class="material-symbols-outlined">category</span>Categorize expenses easily</li>
+                            <li><span class="material-symbols-outlined">search</span>Powerful search and filters</li>
+                            <li><span class="material-symbols-outlined">cloud_upload</span>Secure cloud backup</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><span class="material-symbols-outlined">analytics</span></div>
+                    <h3>Insights</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="material-symbols-outlined">pie_chart</span>
+                            <span>Visual expense reports</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">trending_up</span>
+                            <span>Track spending trends</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">download</span>
+                            <span>Export to PDF and CSV</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <h2>Take Control of Your Expenses</h2>
+            <p>Join thousands of users organizing their finances with ReceiptFlow.</p>
+            <div class="cta-group">
+                <a href="#" class="btn-download btn-primary">
+                    <img src="img/android.png" alt="Android Icon">
+                    Play Store
+                </a>
+                <a href="#" class="btn-download btn-primary">
+                    <img src="img/ios2.png" alt="iOS Icon">
+                    App Store
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p>Need help? Our support team is here for you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon-box"><span class="material-symbols-outlined">email</span></div>
+                    <h3>Email Support</h3>
+                    <p>Get in touch with any questions or issues.</p>
+                    <a href="mailto:halilpamuk24@gmail.com" class="contact-link">halilpamuk24@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="icon-box"><span class="material-symbols-outlined">feedback</span></div>
+                    <h3>Feedback</h3>
+                    <p>We value your suggestions to improve ReceiptFlow.</p>
+                    <a href="mailto:halilpamuk24@gmail.com" class="contact-link">halilpamuk24@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2026 ReceiptFlow. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Scroll Reveal Logic -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('nav.top-nav');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            lastScrollY = currentScrollY;
+        });
+
+        // Mobile Navigation Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+        const mobileNavClose = document.getElementById('mobileNavClose');
+        const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+
+        // Initialize mobile nav state - ensure it's closed on page load
+        function initializeMobileNav() {
+            mobileNavDrawer.classList.remove('open');
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            console.log('Mobile navigation initialized - closed');
+        }
+
+        // Run initialization when DOM is ready
+        document.addEventListener('DOMContentLoaded', initializeMobileNav);
+
+        // Also run immediately in case DOM is already loaded
+        initializeMobileNav();
+
+        function openMobileNav() {
+            console.log('Opening mobile navigation');
+            mobileNavDrawer.classList.add('open');
+            mobileNavOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileNav() {
+            console.log('Closing mobile navigation');
+            mobileNavDrawer.classList.remove('open');
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuToggle.addEventListener('click', openMobileNav);
+        mobileNavClose.addEventListener('click', closeMobileNav);
+        mobileNavOverlay.addEventListener('click', closeMobileNav);
+
+        // Close mobile nav when clicking on nav links
+        document.querySelectorAll('.mobile-nav-item').forEach(link => {
+            link.addEventListener('click', () => {
+                setTimeout(closeMobileNav, 300); // Small delay to allow navigation
+            });
+        });
+
+        // Close mobile nav on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileNavDrawer.classList.contains('open')) {
+                closeMobileNav();
+            }
+        });
+    </script>
+</body>
+
+</html>
