@@ -953,3 +953,32 @@ footer {
         font-size: 24px;
     }
 }
+
+/* General Link States */
+a:active {
+    color: var(--primary-blue) !important;
+}
+
+/* Legal Page Styling */
+.legal-content a {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+.legal-content a.contact-link {
+    text-decoration: none;
+}
+
+.legal-content a:hover {
+    color: var(--deep-blue-accent);
+}
+
+.email-highlight {
+    color: var(--primary-blue);
+    font-weight: 600;
+    padding: 2px 8px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 6px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    font-family: monospace;
+}
