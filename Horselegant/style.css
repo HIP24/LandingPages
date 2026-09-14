@@ -666,6 +666,14 @@ nav.top-nav.scrolled {
     color: var(--primary-green);
 }
 
+/* App icon assets inside the feature icon box */
+.icon-box img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+}
+
 .feature-card h3 {
     font-size: 24px;
     margin: 0 0 20px 0;
@@ -763,6 +771,13 @@ nav.top-nav.scrolled {
     gap: 30px;
     max-width: 900px;
     margin: 0 auto;
+}
+
+/* Single contact card: keep it centered and comfortably narrow */
+.contact-grid .contact-card:only-child {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .contact-card {
