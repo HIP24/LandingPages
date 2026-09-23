@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>AppDash · TikTok sign-in</title>
+<style>body{font:15px/1.5 -apple-system,system-ui,sans-serif;background:#0f1115;color:#e6e8ee;display:grid;place-items:center;height:100vh;margin:0}p{max-width:34em;text-align:center}</style>
+</head>
+<body>
+<p id="msg">Handing your TikTok sign-in back to AppDash on this Mac…</p>
+<script>
+  // TikTok only allows https redirect URIs, so it returns here; this page
+  // forwards the one-time code to AppDash's local listener. The code alone is
+  // useless: exchanging it also needs AppDash's PKCE verifier and client secret.
+  var q = location.search;
+  if (/[?&](code|error)=/.test(q)) {
+    location.replace("http://127.0.0.1:8723/callback/" + q);
+  } else {
+    document.getElementById("msg").textContent =
+      "Nothing to hand over — open the TikTok sign-in from AppDash.";
+  }
+</script>
+</body>
+</html>
