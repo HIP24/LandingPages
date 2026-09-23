@@ -14,6 +14,14 @@
   // useless: exchanging it also needs AppDash's PKCE verifier and client secret.
   var q = location.search;
   if (/[?&](code|error)=/.test(q)) {
+    // If the hand-off doesn't happen (a browser blocking the jump to
+    // 127.0.0.1), show the one-time reply so it can be pasted into AppDash.
+    setTimeout(function () {
+      var m = document.getElementById("msg");
+      m.innerHTML = "If AppDash didn't pick this up, copy this and paste it there:" +
+        "<br><br><code style='word-break:break-all;user-select:all'></code>";
+      m.querySelector("code").textContent = q;
+    }, 2500);
     location.replace("http://127.0.0.1:8723/callback/" + q);
   } else {
     document.getElementById("msg").textContent =
