@@ -566,6 +566,11 @@ section {
     scroll-margin-top: 120px;
 }
 
+/* Sections jumped to from the bar start below it. */
+section[id] {
+    scroll-margin-top: 40px;
+}
+
 /* Footer. */
 footer {
     padding: 40px 0 48px;
