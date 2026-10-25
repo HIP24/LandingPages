@@ -4,282 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Sheikhify</title>
-    <meta name="description" content="Privacy Policy for Sheikhify app - Learn how we protect your data and privacy.">
-
-    <!-- Fonts -->
+    <title>Privacy Policy – Sheikhify</title>
+    <meta name="description" content="How Sheikhify handles your data: what it collects, why, who it shares it with and your rights.">
+    <meta name="theme-color" content="#0b1839">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/logo_transparent_only.png">
-
-    <!-- Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        // The look before the page paints: the visitor's own choice, else
+        // their device's light or dark setting.
+        (function () {
+            var t;
+            try { t = localStorage.getItem('sheikhify-theme'); } catch (e) {}
+            if (t !== 'day' && t !== 'night') {
+                t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'day' : 'night';
+            }
+            document.documentElement.dataset.theme = t;
+        })();
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav class="top-nav">
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
+    <div class="grain" aria-hidden="true"></div>
+    <nav class="nav glass" aria-label="Main">
+        <a href="index.html" class="brand"><img src="img/logo_nav.png" alt="">Sheikhify</a>
+        <div class="nav-links">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#faq">Questions</a>
+            <a href="privacy.html" aria-current="page">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <button type="button" class="sound-toggle glass-control" aria-pressed="false" aria-label="Background sounds">
+                <svg class="sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor" stroke="none"/><path d="M16.5 9.5l5 5M21.5 9.5l-5 5"/></svg>
+                <svg class="sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor" stroke="none"/><path d="M16 9a4.5 4.5 0 0 1 0 6M18.8 6.3a8.4 8.4 0 0 1 0 11.4"/></svg>
             </button>
-
-            <a href="index.html" class="logo-brand">
-                <img src="img/logo_transparent_only.png" alt="Sheikhify Logo">
-                <span>Sheikhify</span>
-            </a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="index.html#features">Features</a>
-                <a href="index.html#contact">Contact</a>
-                <a href="privacy.html" class="active">Privacy</a>
-                <a href="terms.html">Terms</a>
-            </div>
-        </nav>
-
-        <!-- New Mobile Navigation Drawer -->
-        <div class="mobile-nav-drawer" id="mobileNavDrawer">
-            <div class="mobile-nav-header">
-                <div class="mobile-nav-brand">
-                    <img src="img/logo_transparent_only.png" alt="Sheikhify" class="mobile-nav-logo">
-                    <span class="mobile-nav-title">Sheikhify</span>
-                </div>
-                <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation">
-                    <span class="material-symbols-outlined">close</span>
-                </button>
-            </div>
-
-            <nav class="mobile-nav-menu">
-                <div class="mobile-nav-section">
-                    <h4 class="mobile-nav-section-title">Navigation</h4>
-                    <div class="mobile-nav-links">
-                        <a href="index.html" class="mobile-nav-item">
-                            <span class="material-symbols-outlined">home</span>
-                            <span>Home</span>
-                        </a>
-                        <a href="index.html#features" class="mobile-nav-item">
-                            <span class="material-symbols-outlined">star</span>
-                            <span>Features</span>
-                        </a>
-                        <a href="index.html#contact" class="mobile-nav-item">
-                            <span class="material-symbols-outlined">email</span>
-                            <span>Contact</span>
-                        </a>
-                        <a href="privacy.html" class="mobile-nav-item">
-                            <span class="material-symbols-outlined">shield</span>
-                            <span>Privacy</span>
-                        </a>
-                        <a href="terms.html" class="mobile-nav-item">
-                            <span class="material-symbols-outlined">description</span>
-                            <span>Terms</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="mobile-nav-section">
-                    <h4 class="mobile-nav-section-title">Follow Us</h4>
-                    <div class="mobile-nav-social">
-                        <a href="#" class="mobile-nav-social-item">
-                            <i class='bx bxl-twitter'></i>
-                            <span>Twitter</span>
-                        </a>
-                        <a href="#" class="mobile-nav-social-item">
-                            <i class='bx bxl-instagram'></i>
-                            <span>Instagram</span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
+            <button type="button" class="theme-toggle glass-control" aria-label="Switch between day and night">
+                <svg class="moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg>
+                <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor" stroke="none"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+            </button>
+            <a href="index.html#download" class="nav-get">Get the app</a>
         </div>
+    </nav>
 
-        <!-- Mobile Navigation Overlay -->
-        <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <main class="doc">
+        <div class="wrap">
+            <article class="glass">
+                <h1>Privacy Policy</h1>
+                <p class="updated">Last updated: October 24, 2026</p>
+                <p class="lead">Sheikhify treats your privacy as an amanah, a trust. This policy explains what the
+                    app collects, why, who it is shared with, and the choices you have.</p>
 
-        <!-- Privacy Policy Content -->
-        <div class="legal-content">
-            <h1>Privacy Policy</h1>
-            <p><strong>Last updated:</strong> March 18, 2026</p>
+                <h2>What we collect</h2>
+                <h3>Your account</h3>
+                <ul>
+                    <li>Your email address and how you sign in (email and password, Google or Apple).</li>
+                    <li>With Google, your profile photo; with Apple, the name Apple shares.</li>
+                    <li>The name and gender you enter, so the Sheikh can speak to you personally.</li>
+                </ul>
 
-            <p>In our pursuit of providing authentic spiritual guidance, Sheikhify treats your privacy as an
-                <strong>Amanah (trust)</strong>. This Privacy Policy explains what data we collect, how we use it, and
-                how we protect the information you entrust to us.
-            </p>
+                <h3>Your conversations and the Sheikh's memory</h3>
+                <ul>
+                    <li>Your chats and talks with the Sheikh: what you write or say (as text) and his answers.
+                    </li>
+                    <li>The Sheikh's memory: short notes he keeps about what you shared, so he can follow up. You
+                        can reset it in Settings.</li>
+                </ul>
 
-            <h2>Information We Collect</h2>
+                <h3>Your voice</h3>
+                <p>When you talk to the Sheikh, your voice is streamed straight from your device to ElevenLabs to be
+                    turned into text. We do not record or store your voice. The Sheikh's spoken answers are saved on
+                    your device so they can be replayed.</p>
 
-            <h3>Chat and Voice Interactions</h3>
-            <p>We collect information about your interactions with Sheikhify to provide accurate guidance. This
-                includes:
-            </p>
-            <ul>
-                <li>Chat messages and conversation history</li>
-                <li>Voice interaction transcripts (transcribed from audio)</li>
-                <li><strong>Note on Video:</strong> Sheikhify does NOT access, record, or share any camera or video data
-                    from your device. The 'Video' feature consists solely of an animated character providing responses.
-                </li>
-            </ul>
+                <h3>Your settings and progress</h3>
+                <ul>
+                    <li>Language, theme, background sounds and notification settings.</li>
+                    <li>Your prayer times city and calculation method. The app does not use GPS or your device's
+                        location: it starts with the main city of your time zone, and you can pick another.</li>
+                    <li>Your Quran reading progress.</li>
+                </ul>
 
-            <h3>AI Processing Data</h3>
-            <p>To generate spiritual responses, your text and voice transcriptions are processed by trusted third‑party AI
-                services (such as DeepSeek and ElevenLabs). We only share:</p>
-            <ul>
-                <li>Your message text and derived transcripts</li>
-                <li>Recent conversation context (to maintain the flow of discussion)</li>
-                <li>General profile details you choose to provide (e.g., name)</li>
-            </ul>
+                <h3>How you use the app</h3>
+                <ul>
+                    <li>Simple counts, such as how often you open the app, how many chats and talks you have and
+                        how long you talk, plus your app version, platform, language and time zone.</li>
+                    <li>Your subscription status.</li>
+                    <li>Crash reports, without your name, email or account ID.</li>
+                </ul>
+                <p>We use no advertising or analytics tracking tools, and we never sell your data.</p>
 
-            <h3>Account Information</h3>
-            <p>When you create an account, we collect:</p>
-            <ul>
-                <li>Email address and authentication credentials</li>
-                <li>Profile information</li>
-                <li>Subscription status</li>
-            </ul>
+                <h2>Why we use it</h2>
+                <ul>
+                    <li><strong>To provide the app</strong>: answer you, keep your history, remember what matters to
+                        you, show prayer times, and manage your subscription.</li>
+                    <li><strong>To keep the app working and fair</strong>: fix crashes, keep the free limits fair
+                        and prevent abuse.</li>
+                    <li><strong>To improve Sheikhify</strong>: understand which features are used, so we can make
+                        them better.</li>
+                    <li><strong>To answer you</strong> when you contact us.</li>
+                </ul>
+                <p>We rely on providing the service you asked for, on our legitimate interest in running a safe and
+                    fair app, and, where we ask for it, on your consent.</p>
 
-            <h3>Device Information</h3>
-            <p>We automatically collect certain technical information to ensure the app functions properly:</p>
-            <ul>
-                <li>Device type and operating system</li>
-                <li>App version and performance data</li>
-                <li>Crash reports and diagnostic information</li>
-            </ul>
+                <h2>Who we share it with</h2>
+                <p>Only with the services that make Sheikhify work, and only what each one needs:</p>
+                <div class="table-scroll">
+                    <table>
+                        <tr>
+                            <th>Service</th>
+                            <th>Why</th>
+                            <th>What it receives</th>
+                        </tr>
+                        <tr>
+                            <td>DeepSeek</td>
+                            <td>Writes the Sheikh's answers and messages</td>
+                            <td>Your recent messages, your name, gender and the Sheikh's memory of you, and your
+                                local date, time, city and prayer times. Not your email or account ID.</td>
+                        </tr>
+                        <tr>
+                            <td>ElevenLabs</td>
+                            <td>Turns your voice into text and the Sheikh's answers into speech</td>
+                            <td>Your voice while you talk, and the text of his answers. ElevenLabs keeps the
+                                generated speech under its own policy.</td>
+                        </tr>
+                        <tr>
+                            <td>RevenueCat</td>
+                            <td>Manages subscriptions</td>
+                            <td>Your account ID, email, name, gender and purchases.</td>
+                        </tr>
+                        <tr>
+                            <td>Apple and Google</td>
+                            <td>Sign-in and payments</td>
+                            <td>What you share with them to sign in or subscribe.</td>
+                        </tr>
+                        <tr>
+                            <td>Google Firebase</td>
+                            <td>Stores your account and conversations, runs our server, collects crash reports</td>
+                            <td>Everything the app stores for you.</td>
+                        </tr>
+                        <tr>
+                            <td>AlAdhan and Diyanet prayer-time services</td>
+                            <td>Prayer times</td>
+                            <td>Your prayer city's approximate coordinates or place code. Nothing about you.</td>
+                        </tr>
+                        <tr>
+                            <td>Al Quran Cloud and Quran.com</td>
+                            <td>The Quran's text</td>
+                            <td>Requests for surahs. Nothing about you.</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Some of these services process data outside the European Union, including in the United States
+                    and China. Where that happens, they do so under their own safeguards and privacy terms.</p>
 
-            <h2>How We Use Your Information</h2>
-            <p>Your data is used exclusively to:</p>
-            <ul>
-                <li>Provide accurate spiritual guidance and answers</li>
-                <li>Maintain your personal conversation history</li>
-                <li>Generate responses using third‑party AI technology</li>
-                <li>Manage your account and subscription status</li>
-                <li>Respond to your support and feedback requests</li>
-            </ul>
+                <h2>The Sheikh's messages</h2>
+                <p>If you turn on notifications, the Sheikh may write to you now and then, for example on Fridays or
+                    after a while without a chat. These messages are written by DeepSeek from his memory of you and
+                    your last conversation, and are shown as notifications on your device. Notifications are off
+                    until you turn them on.</p>
 
-            <h2>Data Storage and Security</h2>
-            <p>Your conversation data is stored securely on encrypted servers. We implement industry-standard
-                security measures to protect your information from unauthorized access, alteration, or disclosure.
-            </p>
+                <h2>How long we keep it</h2>
+                <p>We keep your data for as long as you have an account. You can reset the Sheikh's memory at any
+                    time in Settings.</p>
+                <p>When you delete your account, your sign-in, your email, name, photo, gender and the Sheikh's
+                    memory of you are removed right away. <a href="delete-account.html">How to delete your
+                        account.</a></p>
 
-            <h2>Data Sharing</h2>
-            <p>We do not sell, rent, or trade your personal data. We only process data with trusted partners to provide
-                the service:</p>
-            <ul>
-                <li><strong>AI Service Providers:</strong> We send your messages and transcripts to trusted partners, including <strong>DeepSeek</strong> for AI processing and <strong>ElevenLabs</strong> for voice generation and transcription, strictly to generate the AI's response.</li>
-                <li><strong>RevenueCat & App Stores:</strong> Used securely to manage your subscription status.</li>
-                <li><strong>Firebase (Google):</strong> Used to securely store your account and chat data.</li>
-            </ul>
-            <p>We do not allow any third parties to use your data for advertising purposes.</p>
+                <h2>Your rights</h2>
+                <p>You have the right to access your data, to have it corrected or erased, to restrict or object to
+                    its use, to receive it in a portable form, and to withdraw any consent you gave.</p>
 
-            <h2>AI Consent</h2>
-            <p>Before any data is processed by AI services, you must provide consent inside the app. You can review our
-                commitment to your privacy at any time.</p>
+                <h2>Children</h2>
+                <p>Sheikhify is not meant for children under 13, and we do not knowingly collect their data. If you
+                    believe a child has given us data, please contact us.</p>
 
-            <h2>Your Rights</h2>
-            <p>You have the right to:</p>
-            <ul>
-                <li>Access your conversation history inside the app</li>
-                <li>Delete your account and associated data - <a href="delete-account.html">Learn how to delete your
-                        account</a></li>
-            </ul>
+                <h2>Security</h2>
+                <p>Your data travels encrypted and is stored with Google Firebase. Only you can read your account
+                    in the app. No system is perfectly secure, but we work to protect what you entrust to us.</p>
 
+                <h2>Changes to this policy</h2>
+                <p>If we change this policy, we will post the new version here and update the date above.</p>
 
-            <h2>Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the
-                new policy on this page and updating the "Last updated" date.</p>
-
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy or our data practices, please contact us at: <a href="mailto:halilpamuk24@gmail.com" class="contact-link">halilpamuk24@gmail.com</a></p>
+                <h2>Contact</h2>
+                <p>Questions about your privacy: <a href="mailto:halilpamuk24@gmail.com">halilpamuk24@gmail.com</a>
+                </p>
+            </article>
         </div>
+    </main>
 
-        <footer>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-                <a href="index.html#contact">Contact</a>
+    <footer>
+        <div class="wrap">
+            <div class="footer-bar glass">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="terms.html">Terms of Use</a>
+                    <a href="delete-account.html">Delete your account</a>
+                    <a href="mailto:halilpamuk24@gmail.com">Contact</a>
+                </div>
+                <small>© 2026 Sheikhify</small>
             </div>
-            <p class="copyright">&copy; 2026 Sheikhify. All rights reserved.</p>
-        </footer>
-    </div>
-
-    <!-- Mobile Navigation JavaScript -->
-    <script>
-        // Navbar scroll effect
-        const navbar = document.querySelector('nav.top-nav');
-        let lastScrollY = window.scrollY;
-
-        window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
-
-            if (currentScrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-
-            lastScrollY = currentScrollY;
-        });
-
-        // Mobile Navigation Toggle
-        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-        const mobileNavDrawer = document.getElementById('mobileNavDrawer');
-        const mobileNavClose = document.getElementById('mobileNavClose');
-        const mobileNavOverlay = document.getElementById('mobileNavOverlay');
-
-        // Initialize mobile nav state - ensure it's closed on page load
-        function initializeMobileNav() {
-            mobileNavDrawer.classList.remove('open');
-            mobileNavOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        // Run initialization when DOM is ready
-        document.addEventListener('DOMContentLoaded', initializeMobileNav);
-
-        // Also run immediately in case DOM is already loaded
-        initializeMobileNav();
-
-        function openMobileNav() {
-            mobileNavDrawer.classList.add('open');
-            mobileNavOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeMobileNav() {
-            mobileNavDrawer.classList.remove('open');
-            mobileNavOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        mobileMenuToggle.addEventListener('click', openMobileNav);
-        mobileNavClose.addEventListener('click', closeMobileNav);
-        mobileNavOverlay.addEventListener('click', closeMobileNav);
-
-        // Close mobile nav when clicking on nav links
-        document.querySelectorAll('.mobile-nav-item').forEach(link => {
-            link.addEventListener('click', () => {
-                setTimeout(closeMobileNav, 300); // Small delay to allow navigation
-            });
-        });
-
-        // Close mobile nav on escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && mobileNavDrawer.classList.contains('open')) {
-                closeMobileNav();
-            }
-        });
-    </script>
+        </div>
+    </footer>
+    <script src="site.js"></script>
 </body>
 
 </html>

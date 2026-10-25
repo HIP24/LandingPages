@@ -4,261 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - Sheikhify</title>
-    <meta name="description"
-        content="Terms of Service for Sheikhify app - Terms and conditions for using our AI Islamic companion application.">
-
-    <!-- Fonts -->
+    <title>Terms of Use – Sheikhify</title>
+    <meta name="description" content="The terms for using Sheikhify, its free tier and Premium subscription.">
+    <meta name="theme-color" content="#0b1839">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/logo_transparent_only.png">
-
-    <!-- Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        // The look before the page paints: the visitor's own choice, else
+        // their device's light or dark setting.
+        (function () {
+            var t;
+            try { t = localStorage.getItem('sheikhify-theme'); } catch (e) {}
+            if (t !== 'day' && t !== 'night') {
+                t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'day' : 'night';
+            }
+            document.documentElement.dataset.theme = t;
+        })();
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav class="top-nav">
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
+    <div class="grain" aria-hidden="true"></div>
+    <nav class="nav glass" aria-label="Main">
+        <a href="index.html" class="brand"><img src="img/logo_nav.png" alt="">Sheikhify</a>
+        <div class="nav-links">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#faq">Questions</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html" aria-current="page">Terms</a>
+            <button type="button" class="sound-toggle glass-control" aria-pressed="false" aria-label="Background sounds">
+                <svg class="sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor" stroke="none"/><path d="M16.5 9.5l5 5M21.5 9.5l-5 5"/></svg>
+                <svg class="sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor" stroke="none"/><path d="M16 9a4.5 4.5 0 0 1 0 6M18.8 6.3a8.4 8.4 0 0 1 0 11.4"/></svg>
             </button>
-
-            <a href="index.html" class="logo-brand">
-                <img src="img/logo_transparent_only.png" alt="Sheikhify Logo">
-                <span>Sheikhify</span>
-            </a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="index.html#features">Features</a>
-                <a href="index.html#contact">Contact</a>
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html" class="active">Terms</a>
-            </div>
-        </nav>
-
-        <!-- New Mobile Navigation Drawer -->
-        <div class="mobile-nav-drawer" id="mobileNavDrawer">
-            <div class="mobile-nav-header">
-                <div class="mobile-nav-brand">
-                    <img src="img/logo_transparent_only.png" alt="Sheikhify" class="mobile-nav-logo">
-                    <span class="mobile-nav-title">Sheikhify</span>
-                </div>
-                <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation">
-                    <span class="material-symbols-outlined">close</span>
-                </button>
-            </div>
-
-            <nav class="mobile-nav-menu">
-                <div class="mobile-nav-section">
-                    <h4 class="mobile-nav-section-title">Navigation</h4>
-                    <div class="mobile-nav-links">
-                        <a href="index.html" class="mobile-nav-item">
-                            <span class="material-symbols-outlined">home</span>
-                            <span>Home</span>
-                        </a>
-                        <a href="index.html#features" class="mobile-nav-item">
-                            <span class="material-symbols-outlined">star</span>
-                            <span>Features</span>
-                        </a>
-                        <a href="index.html#contact" class="mobile-nav-item">
-                            <span class="material-symbols-outlined">email</span>
-                            <span>Contact</span>
-                        </a>
-                        <a href="privacy.html" class="mobile-nav-item">
-                            <span class="material-symbols-outlined">shield</span>
-                            <span>Privacy</span>
-                        </a>
-                        <a href="terms.html" class="mobile-nav-item">
-                            <span class="material-symbols-outlined">description</span>
-                            <span>Terms</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="mobile-nav-section">
-                    <h4 class="mobile-nav-section-title">Follow Us</h4>
-                    <div class="mobile-nav-social">
-                        <a href="#" class="mobile-nav-social-item">
-                            <i class='bx bxl-twitter'></i>
-                            <span>Twitter</span>
-                        </a>
-                        <a href="#" class="mobile-nav-social-item">
-                            <i class='bx bxl-instagram'></i>
-                            <span>Instagram</span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
+            <button type="button" class="theme-toggle glass-control" aria-label="Switch between day and night">
+                <svg class="moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg>
+                <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor" stroke="none"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+            </button>
+            <a href="index.html#download" class="nav-get">Get the app</a>
         </div>
+    </nav>
 
-        <!-- Mobile Navigation Overlay -->
-        <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <main class="doc">
+        <div class="wrap">
+            <article class="glass">
+                <h1>Terms of Use</h1>
+                <p class="updated">Last updated: October 24, 2026</p>
+                <p class="lead">These terms apply when you use Sheikhify. By creating an account or using the app,
+                    you agree to them. If you do not agree, please do not use Sheikhify.</p>
 
-        <!-- Terms of Service Content -->
-        <div class="legal-content">
-            <h1>Terms of Service</h1>
-            <p><strong>Last updated:</strong> March 18, 2026</p>
+                <h2>What Sheikhify is</h2>
+                <p>Sheikhify is an app made by Halil Pamuk, Austria. In it you can chat and talk by voice with the
+                    Sheikh, an AI guided to answer from the Quran and Sunnah; see your prayer times with an adhan;
+                    and read the Quran, with the Sheikh beside you to explain any verse.</p>
 
-            <p>Welcome to Sheikhify. These Terms of Service govern your use of our AI Islamic companion application and
-                services. By downloading, installing, or using Sheikhify, you agree to these terms.</p>
+                <h2>The Sheikh is an AI</h2>
+                <div class="note">The Sheikh's answers are written by artificial intelligence. They are for
+                    learning and reflection only. He is not a scholar or mufti and cannot give fatwas (religious
+                    rulings). AI can make mistakes, so please check what matters, and for serious religious,
+                    medical, legal or personal matters, ask a qualified scholar or professional.</div>
+                <p>You are responsible for the decisions you make based on what the app says.</p>
 
-            <h2>Acceptance of Terms</h2>
-            <p>By accessing and using Sheikhify, you accept and agree to be bound by the terms and provision of this
-                agreement. If you do not agree to abide by the above, please do not use this service.</p>
+                <h2>Your account</h2>
+                <ul>
+                    <li>You need an account to use Sheikhify. Keep your sign-in details safe; you are responsible
+                        for what happens in your account.</li>
+                    <li>You must be at least 13 years old to use Sheikhify.</li>
+                    <li>You can delete your account at any time in Settings.</li>
+                </ul>
 
-            <h2>Description of Service</h2>
-            <p>Sheikhify is an innovative application designed to provide spiritual insights and knowledge through
-                AI-powered chat, audio interactions, and animated video calls. We aim to present information based on
-                authentic Islamic principles to help you on your journey of learning.</p>
+                <h2>Using Sheikhify respectfully</h2>
+                <p>Please use Sheikhify to learn and reflect. You agree not to:</p>
+                <ul>
+                    <li>use it to harm, harass or deceive anyone, or for anything unlawful;</li>
+                    <li>try to get around its limits, for example with several accounts, or misuse, copy or attack
+                        the app or its server;</li>
+                    <li>present the Sheikh's answers as rulings from a real scholar.</li>
+                </ul>
 
-            <h2>User Responsibilities</h2>
+                <h2>Free and Premium</h2>
+                <ul>
+                    <li><strong>Free</strong>: you can try Sheikhify with a limited number of chat messages and talk
+                        turns, along with prayer times and the Quran.</li>
+                    <li><strong>Premium</strong>: a weekly, monthly or yearly subscription that removes the chat and
+                        talk limits, within fair use.</li>
+                    <li>Subscriptions are bought and billed through the App Store or Google Play, renew
+                        automatically at the end of each period unless you cancel at least 24 hours before, and can
+                        be managed or cancelled in your store account settings.</li>
+                    <li>Prices are shown in the app before you buy. Refunds are handled by Apple or Google under
+                        their rules.</li>
+                </ul>
 
-            <h3>Appropriate Use</h3>
-            <p>You agree to use Sheikhify respectfully for seeking Islamic knowledge and guidance. The app is designed
-                for educational and spiritual purposes. Any misuse or inappropriate content is strictly prohibited.</p>
+                <h2>Your content</h2>
+                <p>What you write and say stays yours. You allow us to store it and process it with the services
+                    named in our <a href="privacy.html">Privacy Policy</a>, so the app can answer you and remember
+                    what you shared.</p>
 
-            <h3>Account Security</h3>
-            <p>You are responsible for maintaining the security of your account and device. Keep your login credentials
-                confidential and notify us immediately of any unauthorized access.</p>
+                <h2>Our content</h2>
+                <p>The app, its design, the Sheikh's character, artwork, sounds and code belong to Halil Pamuk. You
+                    may use them in the app for yourself, but not copy, sell or reuse them elsewhere. The Quran's
+                    text and translations come from their respective sources.</p>
 
-            <h2>AI Guidance Disclaimer (Amanah)</h2>
-            <p>While Sheikhify strives to provide high-quality insights based on authentic sources, please understand
-                that <strong>AI responses are for educational purposes only</strong>. The AI is not a Mujtahid (scholar)
-                and cannot issue Fatwas (religious rulings). For specific or serious religious matters, we strongly
-                encourage you to consult with qualified Islamic scholars in your local community.</p>
+                <h2>Availability</h2>
+                <p>We work to keep Sheikhify running, but we cannot promise it is always available or free of
+                    errors. We may change, add or remove features over time.</p>
 
-            <h2>Subscriptions and Payments</h2>
-            <p>Sheikhify offers both a limited free tier and premium subscription options (Weekly, Monthly, and Yearly). Premium features and expanded access are available through in-app purchases. All payments and subscription management are handled securely through the Apple App Store or Google Play Store.</p>
+                <h2>Ending your use</h2>
+                <p>You can stop using Sheikhify and delete your account at any time. We may suspend or close an
+                    account that breaks these terms or puts the app or others at risk.</p>
 
-            <h2>Intellectual Property</h2>
-            <p>All content, features, and functionality of Sheikhify are owned by Sheikhify and are protected by
-                copyright, trademark, and other intellectual property laws. You may not modify, copy, distribute,
-                transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell
-                any information obtained from Sheikhify.</p>
+                <h2>Liability</h2>
+                <p>Sheikhify is provided as it is. To the extent the law allows, we are not liable for indirect or
+                    consequential damages, or for decisions made based on the Sheikh's answers. Nothing in these
+                    terms limits rights you have under consumer law that cannot be limited, or liability for intent
+                    or gross negligence.</p>
 
-            <h2>Privacy and Data</h2>
-            <p>Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and
-                protect your information. By using Sheikhify, you consent to the collection and use of information as
-                described in our Privacy Policy.</p>
+                <h2>App stores</h2>
+                <p>If you use Sheikhify on an iPhone or iPad, Apple's standard end user licence agreement (EULA)
+                    also applies. Apple and Google are not responsible for the app or its support.</p>
 
-            <h2>Disclaimers</h2>
+                <h2>Law</h2>
+                <p>These terms are governed by the laws of Austria. If you are a consumer, you keep the protection
+                    of the mandatory laws of the country where you live.</p>
 
-            <h3>Service Availability</h3>
-            <p>We strive to maintain uninterrupted service but cannot guarantee 100% availability. The app may be
-                temporarily unavailable due to maintenance, updates, or technical issues beyond our control.</p>
+                <h2>Changes</h2>
+                <p>We may update these terms. We will post the new version here with a new date; if a change
+                    matters to you, we will let you know in the app or by email.</p>
 
-            <h2>Limitation of Liability</h2>
-            <p>To the maximum extent permitted by law, Sheikhify shall not be liable for any indirect, incidental,
-                special, consequential, or punitive damages, including without limitation, loss of profits, data, use,
-                goodwill, or other intangible losses, resulting from your use of Sheikhify.</p>
-
-            <h2>Termination</h2>
-            <p>We may terminate or suspend your account and bar access to the service immediately, without prior notice
-                or liability, under our sole discretion, for any reason whatsoever and without limitation.</p>
-
-            <h2>Changes to Terms</h2>
-            <p>We reserve the right to modify these terms at any time. If we make material changes, we will notify you
-                by email or by posting a notice on our website prior to the effective date of the changes.</p>
-
-            <h2>Contact Information</h2>
-            <p>If you have any questions about these Terms of Service or your interactions with the app, please contact
-                us at: <a href="mailto:halilpamuk24@gmail.com" class="contact-link">halilpamuk24@gmail.com</a></p>
-
+                <h2>Contact</h2>
+                <p>Questions about these terms: <a href="mailto:halilpamuk24@gmail.com">halilpamuk24@gmail.com</a>
+                </p>
+            </article>
         </div>
+    </main>
 
-        <!-- Footer -->
-        <footer>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-                <a href="index.html#contact">Contact</a>
+    <footer>
+        <div class="wrap">
+            <div class="footer-bar glass">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="delete-account.html">Delete your account</a>
+                    <a href="mailto:halilpamuk24@gmail.com">Contact</a>
+                </div>
+                <small>© 2026 Sheikhify</small>
             </div>
-            <p class="copyright">&copy; 2026 Sheikhify. All rights reserved.</p>
-        </footer>
-    </div>
-
-    <!-- Mobile Navigation JavaScript -->
-    <script>
-        // Navbar scroll effect
-        const navbar = document.querySelector('nav.top-nav');
-        let lastScrollY = window.scrollY;
-
-        window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
-
-            if (currentScrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-
-            lastScrollY = currentScrollY;
-        });
-
-        // Mobile Navigation Toggle
-        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-        const mobileNavDrawer = document.getElementById('mobileNavDrawer');
-        const mobileNavClose = document.getElementById('mobileNavClose');
-        const mobileNavOverlay = document.getElementById('mobileNavOverlay');
-
-        // Initialize mobile nav state - ensure it's closed on page load
-        function initializeMobileNav() {
-            mobileNavDrawer.classList.remove('open');
-            mobileNavOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        // Run initialization when DOM is ready
-        document.addEventListener('DOMContentLoaded', initializeMobileNav);
-
-        // Also run immediately in case DOM is already loaded
-        initializeMobileNav();
-
-        function openMobileNav() {
-            mobileNavDrawer.classList.add('open');
-            mobileNavOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeMobileNav() {
-            mobileNavDrawer.classList.remove('open');
-            mobileNavOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        mobileMenuToggle.addEventListener('click', openMobileNav);
-        mobileNavClose.addEventListener('click', closeMobileNav);
-        mobileNavOverlay.addEventListener('click', closeMobileNav);
-
-        // Close mobile nav when clicking on nav links
-        document.querySelectorAll('.mobile-nav-item').forEach(link => {
-            link.addEventListener('click', () => {
-                setTimeout(closeMobileNav, 300); // Small delay to allow navigation
-            });
-        });
-
-        // Close mobile nav on escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && mobileNavDrawer.classList.contains('open')) {
-                closeMobileNav();
-            }
-        });
-    </script>
+        </div>
+    </footer>
+    <script src="site.js"></script>
 </body>
 
 </html>
